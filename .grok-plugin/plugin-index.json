@@ -1,1 +1,35 @@
-SEE_FILE
+{
+  "version": 1,
+  "plugins": {
+    "trades-supply-scout": {
+      "sha": "83094dda7ea2f91881598251bcc2f0e40c5043a1",
+      "version": "0.1.0",
+      "components": {
+        "agents": [
+          {
+            "name": "yard-buyer",
+            "description": "Specialist buyer for US trades materials. Builds a takeoff, normalizes SKUs, and returns a lowest-posted-price table fr…"
+          }
+        ],
+        "skills": [
+          {
+            "name": "compare-supply-prices",
+            "description": "Compare current list or posted prices and stock for a trades material across established US suppliers. Use when the use…"
+          },
+          {
+            "name": "job-compliance",
+            "description": "Flag license, permit, inspection, and code-check steps a US trades job may need before materials are ordered. Use when…"
+          },
+          {
+            "name": "material-takeoff",
+            "description": "Turn a job description, photo, or rough scope into a materials list with quantities, waste factors, and supplier compar…"
+          },
+          {
+            "name": "normalize-trade-sku",
+            "description": "Build a canonical trades product key from messy titles so the same fitting, wire, board, or fastener can be matched acr…"
+          }
+        ]
+      }
+    }
+  }
+}
