@@ -1,34 +1,20 @@
 {
   "version": 1,
   "plugins": {
+    "axiom": {
+      "sha": "0e98ebaeec76a70c8fda9a7737605800c2f1245d",
+      "version": "1.0.0",
+      "components": {
+        "mcpServers": [{"name": "axiom", "description": "http"}],
+        "skills": [{"name": "axiom-alerting", "description": "Create and manage Axiom monitors and notifiers via the v2 public API. Use when building alerting, routing notifications…"},{"name": "axiom-sre", "description": "Expert SRE investigator for incidents and debugging. Uses hypothesis-driven methodology and systematic triage. Can quer…"},{"name": "building-dashboards", "description": "Designs and builds Axiom dashboards via API. Covers chart types, APL and metrics/MPL query patterns, SmartFilters, layo…"},{"name": "controlling-costs", "description": "Analyzes Axiom query patterns to find unused data, then builds dashboards and monitors for cost optimization. Use when…"},{"name": "query-metrics", "description": "Runs metrics queries against Axiom MetricsDB via scripts. Discovers available metrics, tags, and tag values. Use when a…"},{"name": "spl-to-apl", "description": "Translates Splunk SPL queries to Axiom APL. Provides command mappings, function equivalents, and syntax transformations…"},{"name": "writing-evals", "description": "Scaffolds evaluation suites for the Axiom AI SDK. Generates eval files, scorers, flag schemas, and config from natural-…"}]
+      }
+    },
     "trades-supply-scout": {
       "sha": "83094dda7ea2f91881598251bcc2f0e40c5043a1",
       "version": "0.1.0",
       "components": {
-        "agents": [
-          {
-            "name": "yard-buyer",
-            "description": "Specialist buyer for US trades materials. Builds a takeoff, normalizes SKUs, and returns a lowest-posted-price table fr…"
-          }
-        ],
-        "skills": [
-          {
-            "name": "compare-supply-prices",
-            "description": "Compare current list or posted prices and stock for a trades material across established US suppliers. Use when the use…"
-          },
-          {
-            "name": "job-compliance",
-            "description": "Flag license, permit, inspection, and code-check steps a US trades job may need before materials are ordered. Use when…"
-          },
-          {
-            "name": "material-takeoff",
-            "description": "Turn a job description, photo, or rough scope into a materials list with quantities, waste factors, and supplier compar…"
-          },
-          {
-            "name": "normalize-trade-sku",
-            "description": "Build a canonical trades product key from messy titles so the same fitting, wire, board, or fastener can be matched acr…"
-          }
-        ]
+        "agents": [{"name": "yard-buyer", "description": "Specialist buyer for US trades materials. Builds a takeoff, normalizes SKUs, and returns a lowest-posted-price table fr…"}],
+        "skills": [{"name": "compare-supply-prices", "description": "Compare current list or posted prices and stock for a trades material across established US suppliers. Use when the use…"},{"name": "job-compliance", "description": "Flag license, permit, inspection, and code-check steps a US trades job may need before materials are ordered. Use when…"},{"name": "material-takeoff", "description": "Turn a job description, photo, or rough scope into a materials list with quantities, waste factors, and supplier compar…"},{"name": "normalize-trade-sku", "description": "Build a canonical trades product key from messy titles so the same fitting, wire, board, or fastener can be matched acr…"}]
       }
     }
   }
